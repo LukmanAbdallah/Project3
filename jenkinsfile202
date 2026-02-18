@@ -48,8 +48,8 @@ pipeline {
             steps {
                 deploy adapters: [
                     tomcat9(
-                        credentialsId: 'tomcat-deploy',
-                        url: 'http://tomcat_dev:8080'
+                        credentialsId: 'tomcat-cred',
+                        url: 'http://tomcat:8080'
                     )
                 ],
                 contextPath: 'linkpay-test',
@@ -59,4 +59,5 @@ pipeline {
     }
 
 }
+
 

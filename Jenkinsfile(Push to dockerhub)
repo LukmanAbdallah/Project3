@@ -16,8 +16,7 @@ pipeline {
         stage('1. Git Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/KofiBruno/Linkpay_Project.git',
-                    credentialsId: 'linkpayProject'
+                    url: 'https://github.com/LukmanAbdallah/Project4.git',
             }
         }
 
@@ -73,3 +72,4 @@ pipeline {
     }
 
 }
+

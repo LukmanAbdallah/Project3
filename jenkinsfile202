@@ -1,5 +1,5 @@
-node {
-
+pipeline {
+    agent any
     def WAR_FILE = "target/*.war"
 
     stage('1. Git Build') {
@@ -38,6 +38,7 @@ node {
         war: WAR_FILE
     }
 }
+
 
 
 
